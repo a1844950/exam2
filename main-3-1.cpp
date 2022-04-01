@@ -4,6 +4,9 @@ using namespace std;
 int count_number_in_range(int vals[],int length, int botton, int top);
 int main()
 {
+  int length = 7;
+  int  botton = 3;
+  int top = 6;
   int vals[] = { 1,7,3,4,6,5,2 };
   int res = count_number_in_range(vals,7,3,6);
   cout << res;
