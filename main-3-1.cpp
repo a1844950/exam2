@@ -1,12 +1,16 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-int count_number_in_range(int vals[],int length, int botton, int top);
-int main()
+ 
+int count_number_in_range(int vals[], int length, int bottom, int top)
 {
-  int vals[] = { 1,7,3,4,6,5,2 };
-  int res = count_number_in_range(vals,7,3,6);
-  cout << res;
+  ///counter
+  int count = 0;
   
-  return 0;
+  for (int i = 0; i < length; i++)
+  {
+    ///Top - Botton
+    if (vals[i] <=top && vals[i]>=bottom)
+      count++;
+  }
+  return count;
 }
