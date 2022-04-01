@@ -1,18 +1,17 @@
 #include<iostream>
 #include<string>
 
-int lookup_speeding_fine(int over)
+int lookup_speeding_fine(int over);
+
+int main()
 {
- if (over <= 0)
-  return 0;
- else if (over > 0 && over < 10)
-  return 180;
- else if (over >= 10 && over < 20)
-  return 406;
- else if (over >= 20 && over < 30)
-  return 825;
- else if (over > 30 && over < 45)
-  return 1500;
- else 
-  return 1690;
+ int over = 0;
+ std::cout << "my speeding fine is: " << lookup_speeding_fine(over) << std::endl;
+  over = 10;
+ std::cout << "my speeding fine is: " << lookup_speeding_fine(over) << std::endl;
+  over = 21;
+ std::cout << "my speeding fine is: " << lookup_speeding_fine(over) << std::endl;
+  over = 50;
+ std::cout << "my speeding fine is: " << lookup_speeding_fine(over) << std::endl;
+ return 0;
 }
