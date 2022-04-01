@@ -3,11 +3,6 @@
 
 int lookup_speeding_fine(int over)
 {
-  #include<iostream>
-#include<string>
-
-int lookup_speeding_fine(int over)
-{
  if (over <= 0)
   return 0;
  else if (over > 0 && over < 10)
