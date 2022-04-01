@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdlib.h>
+#include "main-3-1.cpp"
 using namespace std;
  
 int count_number_in_range(int vals[], int length, int bottom, int top)
