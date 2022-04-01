@@ -2,7 +2,7 @@
 #include<string>
 
 int lookup_speeding_fine(int over)
-{
+
  int main()
  {
    int over = 0;
