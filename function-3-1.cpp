@@ -9,7 +9,7 @@ int count_number_in_range(int vals[], int length, int bottom, int top)
   for (int i = 0; i < length; i++)
   {
     ///Top - Botton
-    if (vals[i] <=top && >=botton)
+    if (vals[i] <=top && >=bottom)
       count++;
   }
   return count;
