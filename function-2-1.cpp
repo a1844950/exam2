@@ -11,7 +11,7 @@ int lookup_speeding_fine(int over)
   return 406;
  else if (over >= 20 && over < 30)
   return 825;
- else if (over > 30 && over < 45)
+ else if (over > =30 && over < 45)
   return 1500;
  else 
   return 1690;
