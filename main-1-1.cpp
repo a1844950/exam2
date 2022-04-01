@@ -1,9 +1,19 @@
-#include <iostream>
 
-int *shift_right(int *vals, int len, int amount);
+#include<iostream>
+using namespace std;
+
+
+int* shift_right(int* vals, int len,int amout);
+
 
 int main()
 {
-  int vals[] = { 1,2,3,4,5 };
-  shift_right(vals,5,2);
+ int vals[] = {5,4,3,2,1,1 };
+ int * s = shift_right(vals, 6,3);
+ for (int i = 0; i < 6; i++)
+ {
+  cout << s[i];
+
+ }
+
 }
